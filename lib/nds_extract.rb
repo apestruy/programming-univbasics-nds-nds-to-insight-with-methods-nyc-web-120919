@@ -19,12 +19,9 @@ end
 
 def gross_for_director(director_data)
  director_total = 0 
- 
- 
- movies_length = nds[row_index][:movies].count
  element_index = 0 
-  while element_index < movies_length do
-      director_total += nds[row_index][:movies][element_index][:worldwide_gross]
+  while element_index < director_data[:movies].count do
+      director_total += director_data[:movies][element_index][:worldwide_gross]
       element_index += 1 
     end 
     director_total

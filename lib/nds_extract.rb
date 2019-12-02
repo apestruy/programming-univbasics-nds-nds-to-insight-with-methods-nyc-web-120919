@@ -19,6 +19,8 @@ end
 
 def gross_for_director(director_data)
  director_total = 0 
+ 
+ 
  movies_length = nds[row_index][:movies].count
  element_index = 0 
   while element_index < movies_length do
